@@ -1,6 +1,7 @@
 body {
     background: #d6c7a9;
     font: 13px/1.25 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+    padding: 25px;
     text-align: center;
 }
 
@@ -13,7 +14,7 @@ ol {
 	background: #FFF;
     border-radius: 4px;
 	box-shadow: 0 0 6px rgba(54,29,0, 0.45);
-	margin: 10% auto;
+	margin: 1% auto 3%;
 	padding: 10px;
 	width: 285px;
 }
@@ -85,6 +86,10 @@ li span.letters {
     font-size: 48px;
     position: relative;
     top: 7px;
+}
+
+.btn {
+	margin-top: 16px;
 }
 
 .clearfix:after {

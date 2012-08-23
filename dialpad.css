@@ -1,0 +1,109 @@
+body {
+    background: #d6c7a9;
+    font: 13px/1.25 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+    text-align: center;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+#dial-pad-container {
+	background: #FFF;
+    border-radius: 4px;
+	box-shadow: 0 0 6px rgba(54,29,0, 0.45);
+	margin: 10% auto;
+	padding: 10px;
+	width: 285px;
+}
+
+li {
+    background: #361D00;
+    background-image: -webkit-gradient(linear, 0% 0%, 50% 100%, from(#d6c7a9), to(#361D00));
+    background-image: -moz-linear-gradient(50% 100% 90deg, #361D00, #d6c7a9);
+    border-radius: 6px;
+    box-shadow: 1px 4px 6px rgba(0,0,0,0.6);  
+    clear: none;
+    cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 34px;
+	margin: 10px;
+	padding: 2px 6px 12px;
+	text-align: center;
+}
+
+li:active {
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    -webkit-transform: scale(.92);
+       -moz-transform: scale(.92);
+         -o-transform: scale(.92);
+    transform: scale(.92);
+    -webkit-transition: all 0.05s ease-out;
+       -moz-transition: all 0.05s ease-out;
+         -o-transition: all 0.05s ease-out;
+    transition: all 0.05s ease-out;
+}
+
+li:active span.border {
+  	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d6c7a9), to(#fff));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #fff, #d6c7a9);
+    border-top: solid 1px #d6c7a9;
+	border-left: solid 1px #d6c7a9;
+}
+
+li span {
+	display: block;
+}
+
+li span.border {
+    background: #ece5db;  
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#d6c7a9));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #d6c7a9, #fff);
+    border-radius: 4px;
+    border-top: solid 1px #FFF;
+	border-left: solid 1px #FFF;
+	box-shadow: -4px 0px 4px rgba(0,0,0,.6);
+	padding: 6px;
+    width: 50px;
+}
+
+li span.letters {
+	color: #361D00;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	height: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+#star {
+    font-size: 48px;
+    position: relative;
+    top: 7px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
